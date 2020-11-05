@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-const config = require('./config.json')
+//const config = require('./config.json')
 const bienvenida = require('./bienvenida')
 
 client.on('ready', () => {
@@ -10,4 +10,4 @@ client.on('ready', () => {
     bienvenida(client)
 })
 
-client.login(config.token)
+client.login(process.env.TOKEN)
