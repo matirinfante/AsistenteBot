@@ -1,6 +1,6 @@
 module.exports = (client) => {
     const channelId = '757954702003667005' // welcome channel
-    const reglasId = '774003534738882581' // reglas
+    const reglasId = '701917361434919042' // reglas
     const solicitudClaseId = '701921320950300672' // solicitud de clase
     const solicitudNombreId = '701921115358101504' // solicitud de nombre
     const solicitudHorarioId = '717771774997299301' // solicitud de horario
