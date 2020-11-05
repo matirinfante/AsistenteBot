@@ -11,9 +11,7 @@ module.exports = (client) => {
         const message = `Bienvenido <@${
             member.id
         }> al Batallón de la muerte, seré tu asistente de bienvenida. Si quieres ver cómo nos manejamos dentro del server pásate por ${member.guild.channels.cache
-            .get(reglasId)
-            .toString()}. 
-            Para comenzar tu camino como Clone Trooper pasate por los canales ${member.guild.channels.cache
+            .get(reglasId).toString()}. \nPara comenzar tu camino como Clone Trooper pasate por los canales ${member.guild.channels.cache
             .get(solicitudClaseId)
             .toString()} ${member.guild.channels.cache
             .get(solicitudNombreId)
