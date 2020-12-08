@@ -6,7 +6,13 @@ const bienvenida = require('./bienvenida')
 
 client.on('ready', () => {
     console.log('Asistente listo')
-
+    client.user.setPresence({
+        status: "online",
+        game: {
+            name: "a los nuevos aspirantes",
+            type: "LISTENING" // PLAYING, WATCHING, LISTENING, STREAMING,
+        }
+    });
     roleClaim(client)
     bienvenida(client)
 })
