@@ -56,7 +56,7 @@ module.exports = (client) => {
             } else {
                 member.roles.add(role)
                 canalRegistro.send(`El clon **${user}** ha seleccionado la clase **${roleName}**`)
-                if (member.nickname.startsWith("CR ")) { //si el clon completó el registro
+                if (member.nickname != null && member.nickname.startsWith("CR ")) { //si el clon completó el registro
                     member.roles.remove(guild.roles.cache.get(idAspirante)) //idAspirante
                     member.roles.add(guild.roles.cache.get(idPelotonAlfa)) //idPelotonAlfa
                     member.roles.add(guild.roles.cache.get(idRecluta)) //idRecluta
