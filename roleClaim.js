@@ -7,10 +7,10 @@ module.exports = (client) => {
         client.emojis.cache.find((emoji) => emoji.name === emojiName)
 
     const emojis = {
-        Asalto: 'Clon Asalto',
-        Pesado: 'Clon Pesado',
-        Medico: 'Clon Medico',
-        Especialista: 'Clon Especialista'
+        SPOILER_Asalto: 'Clon Asalto',
+        SPOILER_Pesado: 'Clon Pesado',
+        SPOILER_Medico: 'Clon Medico',
+        SPOILER_Especialista: 'Clon Especialista'
     }
 
     const reactions = []
@@ -36,7 +36,7 @@ module.exports = (client) => {
         idRecluta = '701962200126062683'
         idAspiranteIncompleto = '799116203976687636'
 
-        if (user.id === '') {
+        if (user.id === '731894178258354296') {
             return
         }
         const emoji = reaction._emoji.name
