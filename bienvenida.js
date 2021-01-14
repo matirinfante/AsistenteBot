@@ -12,12 +12,12 @@ module.exports = (client) => {
             member.id
         }> al Batallón de la muerte, seré tu asistente de bienvenida. Si quieres ver cómo nos manejamos dentro del server pásate por ${member.guild.channels.cache
             .get(reglasId).toString()}. \nPara comenzar tu camino como Clone Trooper pasate por los canales ${member.guild.channels.cache
-            .get(solicitudClaseId)
-            .toString()} ${member.guild.channels.cache
             .get(solicitudNombreId)
             .toString()} ${member.guild.channels.cache
-            .get(solicitudHorarioId)
+            .get(solicitudClaseId)
             .toString()} ${member.guild.channels.cache
+            .get(solicitudHorarioId)
+            .toString()}. También puedes visitar nuestras redes sociales en ${member.guild.channels.cache
             .get(rrssId)
             .toString()}`
 

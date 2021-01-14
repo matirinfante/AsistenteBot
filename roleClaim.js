@@ -34,6 +34,7 @@ module.exports = (client) => {
         idAspirante = '702732926361665567'
         idPelotonAlfa = '710832698163200001'
         idRecluta = '701962200126062683'
+        idAspiranteIncompleto = '799283480369823754'
 
         if (user.id === '773990547382992956') {
             return
@@ -57,7 +58,7 @@ module.exports = (client) => {
                 member.roles.add(role)
                 canalRegistro.send(`El clon **${user}** ha seleccionado la clase **${roleName}**`)
                 if (member.nickname != null && member.nickname.startsWith("CR ")) { //si el clon completó el registro
-                    member.roles.remove(guild.roles.cache.get(idAspirante)) //idAspirante
+                    member.roles.remove(guild.roles.cache.get(idAspiranteIncompleto)) //idAspirante
                     member.roles.add(guild.roles.cache.get(idPelotonAlfa)) //idPelotonAlfa
                     member.roles.add(guild.roles.cache.get(idRecluta)) //idRecluta
                 } else {
