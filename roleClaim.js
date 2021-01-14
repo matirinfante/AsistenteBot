@@ -7,10 +7,10 @@ module.exports = (client) => {
         client.emojis.cache.find((emoji) => emoji.name === emojiName)
 
     const emojis = {
-        SPOILER_Asalto: 'Clon Asalto',
-        SPOILER_Pesado: 'Clon Pesado',
-        SPOILER_Medico: 'Clon Médico',
-        SPOILER_Especialista: 'Clon Especialista'
+        Asalto: 'Clon Asalto',
+        Pesado: 'Clon Pesado',
+        Medico: 'Clon Medico',
+        Especialista: 'Clon Especialista'
     }
 
     const reactions = []
@@ -34,9 +34,9 @@ module.exports = (client) => {
         idAspirante = '702732926361665567'
         idPelotonAlfa = '710832698163200001'
         idRecluta = '701962200126062683'
-        idAspiranteIncompleto = '799283480369823754'
+        idAspiranteIncompleto = '799116203976687636'
 
-        if (user.id === '773990547382992956') {
+        if (user.id === '') {
             return
         }
         const emoji = reaction._emoji.name
@@ -57,7 +57,7 @@ module.exports = (client) => {
             } else {
                 member.roles.add(role)
                 canalRegistro.send(`El clon **${user}** ha seleccionado la clase **${roleName}**`)
-                if (member.nickname != null && member.nickname.startsWith("CR ")) { //si el clon completó el registro
+                if (member.nickname !== null && member.nickname.startsWith("CR ")) { //si el clon completó el registro
                     member.roles.remove(guild.roles.cache.get(idAspiranteIncompleto)) //idAspirante
                     member.roles.add(guild.roles.cache.get(idPelotonAlfa)) //idPelotonAlfa
                     member.roles.add(guild.roles.cache.get(idRecluta)) //idRecluta
