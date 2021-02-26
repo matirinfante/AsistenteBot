@@ -50,7 +50,7 @@ module.exports = (client) => {
         const role = guild.roles.cache.find((role) => role.name === roleName)
         const member = guild.members.cache.find((member) => member.id === user.id)
         if (add) {
-            let tieneRol = member.roles.cache.find((role) => role.name.startsWith("Clon")) === undefined
+            let tieneRol = member.roles.cache.find((role) => role.name.startsWith("• Clon")) === undefined
             if (!(tieneRol)) {
                 msg.reactions.cache.find(r => r.emoji.name === emoji).users.remove(user);
                 canalRegistro.send(`El clon **${user}** ha intentado cambiar de clase a **${roleName}**`)
