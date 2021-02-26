@@ -55,7 +55,7 @@ module.exports = (client) => {
                                     .get(solicitudClaseId).toString()} `)
                                 message.member.roles.add(message.channel.guild.roles.cache.get(idAspiranteIncompleto))
                                 message.member.roles.remove(message.channel.guild.roles.cache.get(idAspirante))
-                                console.log("No tiene el registro completo");
+                                console.log("NAME REGISTER: No tiene el registro completo");
                             }
                         }
                     }

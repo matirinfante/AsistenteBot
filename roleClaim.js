@@ -62,7 +62,7 @@ module.exports = (client) => {
                     member.roles.add(guild.roles.cache.get(idPelotonAlfa)) //idPelotonAlfa
                     member.roles.add(guild.roles.cache.get(idRecluta)) //idRecluta
                 } else {
-                    console.log("No tiene el registro completo")
+                    console.log("ROLE CLAIM: No tiene el registro completo")
                 }
             }
         }
